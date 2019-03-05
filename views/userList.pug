@@ -1,0 +1,24 @@
+div
+    p
+        a(href='/') Add User
+    h1 User List
+
+table
+    tr
+        th userId
+        th name
+        th email
+        th age
+        th
+        th
+    tr
+    for user in userArray
+        tr
+            td= user.userId
+            td= user.name
+            td= user.email
+            td= user.age
+            td
+                a(href='/edit/' + user.userId) Edit
+            td
+                a(href='./delete/' + user.userId) Delete
